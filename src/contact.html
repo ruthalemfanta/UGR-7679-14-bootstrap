@@ -7,68 +7,107 @@
     <title>Ruth Alemfanta - Let's Link</title>
     <link rel="icon" href="../src/images/logo.png" type="image/jpng">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <header>
-        <img class="logo" src="../src/images/logo.png" alt="" height="100" width="100">
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="aboutme.html">About me</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="https://www.linkedin.com/in/r-a-174696263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin" target="_blank"></a></li>
-                <li><a href="https://instagram.com/____ruee____?igshid=YTQwZjQ0NmI0OA==" class="fa fa-instagram" target="_blank"></a></li>
-                <li><a href="https://x.com/fauxroot?s=35" class="fa fa-twitter" target="_blank"></a></li>
-                <li><a href="https://www.snapchat.com/add/fauxroot?share_id=urwEJGjHg7E&locale=en-US" class="fa fa-snapchat" target="_blank"></a></li>
-
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-white ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                 <img class="logo" src="../src/images/logo.png" alt="" height="100" width="100">
+              </a>
+             
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                    <li class="nav-item font-bold fw-bold text-uppercase"><a class="nav-link  mx-lg-2" href="home.html">Home</a></li>
+                    <li class="nav-item fw-bold text-uppercase"><a class="nav-link mx-lg-2" href="aboutme.html">About me</a></li>
+                    <li class="nav-item fw-bold text-uppercase"><a  class="nav-link mx-lg-2" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item fw-bold text-uppercase"><a  class="nav-link mx-lg-2" href="resume.html">Resume</a></li>
+                    <li class="nav-item fw-bold text-uppercase "><a  class="nav-link active mx-lg-2" href="contact.html">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+                <div class="d-none d-lg-block">     
+                    <a href="https://www.linkedin.com/in/r-a-174696263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin p-2 text-decoration-none text-bg-primary text-white rounded-4 p-2 fs-5 " target="_blank"></a>
+                    <a href="https://instagram.com/____ruee____?igshid=YTQwZjQ0NmI0OA==" class="fa fa-instagram p-1 text-decoration-none text-bg-primary text-white rounded-4 p-2 fs-5  " target="_blank"></a>
+                    <a href="https://x.com/fauxroot?s=35" class="fa fa-twitter p-1 text-decoration-none text-bg-primary text-white rounded-4 p-2 fs-5 " target="_blank"></a>
+                    <a href="https://www.snapchat.com/add/fauxroot?share_id=urwEJGjHg7E&locale=en-US" class="fa fa-snapchat p-1 text-decoration-none text-bg-primary text-white rounded-4 p-2 fs-5 " target="_blank"></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
         </nav>
     </header>
 
     <main>
        <section class="contacts-image">
-        <img id="contact-image-front" src="../src/images/contact-image.jpg" alt="A picture of me sitting">
-        <h1>Let's Link</h1>
+        <div class="text-center">
+            <img id="contact-image-front" src="../src/images/contact-image.jpg" alt="A picture of me sitting">
+        </div>
+        <h1 class="text-center display-1 fw-bolder text-primary  ">Let's Link</h1>
        </section> 
 
-       <section class="sections">
-        <h2>Send me a Message</h2>
-        <form method="get">
-                <label for="name"> <input id="name" name="name" type="text" required placeholder="Your Name"></label> <br>
-                <label for="email"> <input id="email" name="email" type="email" required placeholder="Your Email"></label><br>
-                <label for="statement">Say something<br>
-                    <textarea id="statement" name="statement" rows="4" cols="30" placeholder="Hi...."></textarea>
-                  </label><br>
-                <input class ="button" type="submit" value="Send Message" id="submit">
-        </form>
-       </section>
-
-       <section class="socials">
-            <h3>Or use my socials</h3>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/r-a-174696263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin" target="_blank"></a></li>
-                <li><a href="https://instagram.com/____ruee____?igshid=YTQwZjQ0NmI0OA==" class="fa fa-instagram" target="_blank"></a></li>
-                <li><a href="https://x.com/fauxroot?s=35" class="fa fa-twitter" target="_blank"></a></li>
-                <li><a href="https://www.snapchat.com/add/fauxroot?share_id=urwEJGjHg7E&locale=en-US" class="fa fa-snapchat" target="_blank"></a></li>
-            </ul>
-            <h3>And my address</h3>
-            <address>
-                <ul>
-                    <li><a href="mailto:ruthalemfanta@gmail.com" class="fa fa-envelope" target="_blank">ruthalemfanta@gmail.com</a></li>
-                    <li><a href="tel:+251922273737" class="fa fa-phone"> +251 922273737</a></li>
-                    <li><a href="2QG7+HXF,Palace,MenelikIIAve,AddisAbaba" class="fa fa-home">4 Kilo, Addis Ababa</a></li>
+      <div class="container d-flex flex-column flex-lg-row justify-content-around ">
+        <section class="sections">
+            <h2 class="text-primary">Send me a Message</h2>
+            <div>
+                <form method="get">
+                    <div class="form-group my-2">
+                         <label for="name"> <input id="name" name="name" class="form-control" type="text" required placeholder="Your Name"></label> <br>
+                    </div>
+                    <div class="form-group my-2">
+                        <label for="email"> <input id="email" name="email" class="form-control" type="email" required placeholder="Your Email"></label><br>
+                    </div>
+                    <label class="text-primary" for="statement">Say something<br>
+                        <textarea id="statement" class="form-control" name="statement" rows="4" cols="30" placeholder="Hi...."></textarea>
+                      </label><br>
+                    <input class ="btn btn-primary" type="submit" value="Send Message" id="submit">
+                </form>
+            </div>
+           </section>
+    
+           <section class="socials">
+                <h3 class="text-primary">Or use my socials</h3>
+                <ul class="list-unstyled">
+                    <li><a href="https://www.linkedin.com/in/r-a-174696263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin text-decoration-none fs-4" target="_blank"></a></li>
+                    <li><a href="https://instagram.com/____ruee____?igshid=YTQwZjQ0NmI0OA==" class="fa fa-instagram text-decoration-none fs-4" target="_blank"></a></li>
+                    <li><a href="https://x.com/fauxroot?s=35" class="fa fa-twitter text-decoration-none fs-4" target="_blank"></a></li>
+                    <li><a href="https://www.snapchat.com/add/fauxroot?share_id=urwEJGjHg7E&locale=en-US" class="fa fa-snapchat text-decoration-none fs-4" target="_blank"></a></li>
                 </ul>
-            </address>
-
-       </section>
+                <h3 class="text-primary">And my address</h3>
+                <address>
+                    <ul class="list-unstyled text-decoration-none py-2">
+                        <li><a href="mailto:ruthalemfanta@gmail.com" class="fa fa-envelope fs-4 text-decoration-none py-1" target="_blank">ruthalemfanta@gmail.com</a></li>
+                        <li><a href="tel:+251922273737" class="fa fa-phone fs-4 text-decoration-none py-1"> +251 922273737</a></li>
+                        <li><a href="2QG7+HXF,Palace,MenelikIIAve,AddisAbaba" class="fa fa-home fs-4 text-decoration-none py-1">4 Kilo, Addis Ababa</a></li>
+                    </ul>
+                </address>
+    
+           </section>
+      </div>
     </main>
+    <aside class="container my-">
+        <h2 class="text-center text-primary display-5 fw-bold p-2">Extra Socials</h2>
+        <section class="d-flex  justify-content-around ">
+            <a href="https://dribbble.com/rutharegay" title="dribble"><i class="fa fa-dribbble display-1 text-bg-primary rounded-3  text-white p-1  " aria-hidden="true"></i></a>
+            <a href="https://t.me/Ruuueeee" title="telegram"><i class="fa fa-telegram display-1 text-bg-primary rounded-3  text-white p-1 " aria-hidden="true"></i></a>
+            <a href="https://www.reddit.com/user/Competitive-Fix4041" title="reddit"><i class="fa fa-reddit display-1 text-bg-primary rounded-3  text-white p-1 " aria-hidden="true"></i></a>
+            <a href="https://www.twitch.tv/competetivefix" title="twitch"><i class="fa fa-twitch display-1 text-bg-primary rounded-3  text-white p-1 " aria-hidden="true"></i></a>
+       </section>
+    </aside>
 
 
-    <footer>
-       <span class="footer">&copy; Ruth Alemfanta</span>
+    <footer class="text-center bg-primary-subtle p-5 mt-5">
+       <span class="footer text-primary fs-5">&copy; Ruth Alemfanta</span>
     </footer>
+    <script src="../src/js/script.js"></script>
+    <script src="../src/js/bootstrap.bundle.min.js"></script>
     
 </body>
 </html>

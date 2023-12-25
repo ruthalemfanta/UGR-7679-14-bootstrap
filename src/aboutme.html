@@ -7,213 +7,284 @@
     <title>Ruth Alemfanta - About me</title>
     <link rel="icon" href="../src/images/logo.png" type="image/jpng">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
     <header>
-        <img class="logo" src="../src/images/logo.png" alt="" height="100" width="100">
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="aboutme.html">About me</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="https://www.linkedin.com/in/r-a-174696263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin" target="_blank"></a></li>
-                <li><a href="https://instagram.com/____ruee____?igshid=YTQwZjQ0NmI0OA==" class="fa fa-instagram" target="_blank"></a></li>
-                <li><a href="https://x.com/fauxroot?s=35" class="fa fa-twitter" target="_blank"></a></li>
-                <li><a href="https://www.snapchat.com/add/fauxroot?share_id=urwEJGjHg7E&locale=en-US" class="fa fa-snapchat" target="_blank"></a></li>
-
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-white ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                 <img class="logo" src="../src/images/logo.png" alt="" height="100" width="100">
+              </a>
+             
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                    <li class="nav-item font-bold fw-bold text-uppercase"><a class="nav-link  mx-lg-2" href="home.html">Home</a></li>
+                    <li class="nav-item fw-bold text-uppercase"><a class="nav-link active mx-lg-2" href="aboutme.html">About me</a></li>
+                    <li class="nav-item fw-bold text-uppercase"><a  class="nav-link mx-lg-2" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item fw-bold text-uppercase"><a  class="nav-link mx-lg-2" href="resume.html">Resume</a></li>
+                    <li class="nav-item fw-bold text-uppercase "><a  class="nav-link mx-lg-2" href="contact.html">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+                <div class="d-none d-lg-block">     
+                    <a href="https://www.linkedin.com/in/r-a-174696263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin p-2 text-decoration-none text-bg-primary text-white rounded-4 p-2 fs-5 " target="_blank"></a>
+                    <a href="https://instagram.com/____ruee____?igshid=YTQwZjQ0NmI0OA==" class="fa fa-instagram p-1 text-decoration-none text-bg-primary text-white rounded-4 p-2 fs-5  " target="_blank"></a>
+                    <a href="https://x.com/fauxroot?s=35" class="fa fa-twitter p-1 text-decoration-none text-bg-primary text-white rounded-4 p-2 fs-5 " target="_blank"></a>
+                    <a href="https://www.snapchat.com/add/fauxroot?share_id=urwEJGjHg7E&locale=en-US" class="fa fa-snapchat p-1 text-decoration-none text-bg-primary text-white rounded-4 p-2 fs-5 " target="_blank"></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
         </nav>
     </header>
 
     <main>
         
-        <section class="aboutme-intro">
-            <h1>About me</h1>
-            <img id="about-image" src="../src/images/aboutme-image.jpg" alt="A picture of me"  title="A picture of me">
-            <p class="intro">Albert Einstein has had a profound impact on my life, igniting my curiosity and inspiring me to explore the wonders of the universe. His groundbreaking theories and revolutionary ideas have challenged my perception of reality and sparked a lifelong fascination with physics, the cosmos, and tech. He taught me the importance of bridging the gap between complex ideas and practical applications, which has guided me in translating intricate technical concepts into user-friendly solutions. He indeed shaped me as a person.</p>
+        <section class="d-flex flex-column  flex-sm-row mb-5">
+            <div class="flex-lg-grow-0 flex-lg-shrink-0  d-flex">
+                <img id="about-image" class="img-fluid" src="../src/images/aboutme-image.jpg" alt="A picture of me"  title="A picture of me">
+            </div>
+            
+           <div class="p-4">
+                <h1>About me</h1>
+                <p class="fs-5">Albert Einstein has had a profound impact on my life, igniting my curiosity and inspiring me to explore the wonders of the universe. His groundbreaking theories and revolutionary ideas have challenged my perception of reality and sparked a lifelong fascination with physics, the cosmos, and tech. He taught me the importance of bridging the gap between complex ideas and practical applications, which has guided me in translating intricate technical concepts into user-friendly solutions. He indeed shaped me as a person.</p>
+                <p class="fs-5 text-white text-bg-secondary p-3">Imagine a young girl who played games and read blogs about instances of the world stumbling across this quote. It enlightened me that despite the incredible capabilities of computers, they lack the brilliance and creativity inherent in human beings. They reminded me that I possess a unique power—the power to think critically, to solve complex problems, and to envision innovative solutions. They inspired me to chase my intelligence and to recognize that my potential, when combined with the speed and accuracy of technology, can transcend limits and achieve greatness. That's when i fell in love with computers and their enviroment. They became a dear friend to me. Thus started my journey. </p>
+           </div>
         </section>
         
-        <div class="aboutme-intro">
-            <q class="qoute">Computers are high-speed, accurate, and stupid; humans are incredibly slow, inaccurate, and brilliant; together they are powerful beyond imagination</q>
-            <p class="caption">-Albert Einstein(I think)</p>
-            <video src="../src/images/einstin'svideo.mp4"  width="500" height="281" controls muted autoplay>
-                
-           </video><br>
-            <p class="aboutme">Imagine a young girl who played games and read blogs about instances of the world stumbling across this quote. It enlightened me that despite the incredible capabilities of computers, they lack the brilliance and creativity inherent in human beings. They reminded me that I possess a unique power—the power to think critically, to solve complex problems, and to envision innovative solutions. They inspired me to chase my intelligence and to recognize that my potential, when combined with the speed and accuracy of technology, can transcend limits and achieve greatness. That's when i fell in love with computers and their enviroment. They became a dear friend to me. Thus started my journey. </p>
+        <div class="container d-flex flex-column flex-lg-row my-5">
+            <div class="text-center p-3 bg-black rounded-4 p-3 text-white m-4">
+                <q class="fs-4 ">Computers are high-speed, accurate, and stupid; humans are incredibly slow, inaccurate, and brilliant; together they are powerful beyond imagination</q>
+                <p class="fs-3 text-secondary">-Albert Einstein(I think)</p>
+            </div>
+            <div>
+                <video src="../src/images/einstin'svideo.mp4" controls muted autoplay>
+                </video><br>
+            </div>
         </div>
 
-        <section class="hobbies">
-            <h2>What I Like to Do</h2>
-            <h4>Other than obsess about computers</h4>
-            <figure>
-                <img class="hobbies" src="../src/images/chess.png" alt="chess" height="50" title="chess">
-                <figcaption>Chess</figcaption>
-            </figure>
-
-            <figure>
-                <img class="hobbies" src="../src/images/bake.png" alt="bake" height="50" title="cooking">
-                <figcaption>Cooking</figcaption>
-            </figure>
-            <figure>
-                <img class="hobbies" src="../src/images/travel.png" alt="travel" height="50" title="travel">
-                <figcaption>Traveling</figcaption>
-            </figure>
-
-            <figure>
-                <img class="hobbies" src="../src/images/photograph.png" alt="photography" height="50" title="photography">
-                <figcaption>Photography</figcaption>
-            </figure>
-
-            <figure>
-                <img class="hobbies" src="../src/images/game-console.png" alt="video games" height="50" title="vide games">
-                <figcaption>Video Games</figcaption>
-            </figure>
-            
-            <figure>
-                <img class="hobbies" src="../src/images/foreign-language.png" alt="learning new languages" height="50" title="learning new languages">
-                <figcaption>Learning new Languages</figcaption>
-            </figure>
-            
-            <figure>
-                <img class="hobbies" src="../src/images/reading-book.png" alt="books" height="50" title="reading book">
-                <figcaption>Books</figcaption>
-            </figure>
-            
-            <figure>
-                <img class="hobbies" src="../src/images/farming.png" alt="Gardening" height="50" title="reading books">
-                <figcaption>Gardening</figcaption>
-            </figure>
-            
-            <figure>
-                <img class="hobbies" src="../src/images/artist.png" alt="Painting" height="50" title="painting" >
-                <figcaption>Painting</figcaption>
-            </figure>
-            
-            <figure>
-                <img class="hobbies" src="../src/images/swimming-pool.png" alt="swimming" height="50" title="swimming">
-                <figcaption>Swimming</figcaption>
-            </figure>
+        <section class="bg-danger-subtle ">
+            <h2 class="text-center display-1 fs-bold">What I Like to Do</h2>
+            <h4 class="text-center">Other than obsess about computers</h4>
+            <div class="d-flex flex-wrap justify-content-evenly py-5 px-5 gap-lg-5">
+                <figure class="p-md-5">
+                    <img  src="../src/images/chess.png" height="100" alt="chess" title="chess">
+                    <figcaption>Chess</figcaption>
+                </figure>
+    
+                <figure class="p-md-5">
+                    <img  src="../src/images/bake.png"  height="100" alt="bake" title="cooking">
+                    <figcaption>Cooking</figcaption>
+                </figure>
+                <figure class="p-md-5">
+                    <img  src="../src/images/travel.png" height="100" alt="travel" title="travel">
+                    <figcaption>Traveling</figcaption>
+                </figure>
+    
+                <figure class="p-md-5">
+                    <img  src="../src/images/photograph.png"  height="100" alt="photography" title="photography">
+                    <figcaption>Photography</figcaption>
+                </figure>
+    
+                <figure class="p-md-5">
+                    <img  src="../src/images/game-console.png"  height="100" alt="video games" title="vide games">
+                    <figcaption>Video Games</figcaption>
+                </figure>
+                
+                <figure class="p-md-5">
+                    <img  src="../src/images/foreign-language.png"  height="100" alt="learning new languages" title="learning new languages">
+                    <figcaption>Learning new Languages</figcaption>
+                </figure>
+                
+                <figure class="p-md-5">
+                    <img  src="../src/images/reading-book.png"  height="100" alt="books" title="reading book">
+                    <figcaption>Books</figcaption>
+                </figure>
+                
+                <figure class="p-md-5">
+                    <img  src="../src/images/farming.png"  height="100" alt="Gardening" title="reading books">
+                    <figcaption>Gardening</figcaption>
+                </figure class="p-5">
+                
+                <figure class="p-5">
+                    <img  src="../src/images/artist.png"  height="100" alt="Painting" title="painting" >
+                    <figcaption>Painting</figcaption>
+                </figure>
+                
+                <figure class="p-md-5">
+                    <img  src="../src/images/swimming-pool.png"  height="100" alt="swimming" title="swimming">
+                    <figcaption>Swimming</figcaption>
+                </figure>
+            </div>
         </section>
 
-        <section class="minibio">
-            <h2>Mini Bio</h2>
-            <p>Let me walk you through my life</p>
-            <h3>Life after 2002,</h3>
-            <p>I offically joined this world</p>
-            <h3>2010</h3>
-            <p>I got my first phone, the TECNO 1901, It was a momentous occasion, not just for me, but also for my friends. We were eager to witness the wonders this technological marvel had in store. I wasted no time in capturing my first photo.</p>
-            <h3>2012</h3>
-            <p>This year marked the beginning of my deep dive into the world of video games. It became a passion that consumed my days and nights as I embraced the challenges of conquering each level. To overcome these virtual obstacles, I found myself delving into the intricacies of computer manipulation. It was during this journey that I discovered a lifelong companion—Computers.</p>
-            <h3>2017</h3>
-            <p>I encountered my first computer freeze, a daunting moment of frustration. Determined, I turned to the Internet for a solution. With diligence and resourcefulness, I discovered a fix and successfully resolved the issue. A surge of pride washed over me as I reveled in my accomplishment.</p>
-            <h3>2020</h3>
-            <p>The infamous COVID-19 pandemic struck, forcing the world into a prolonged lockdown. In those isolated times, it felt like it was just me and my loyal laptop against the world. It became an opportunity to embark on new ventures. I delved into the realm of programming languages and web design, experimenting with different tools and techniques. </p>
-            <h3>2021</h3>
-            <p>I was blessed to be one of the students to join AAU. It opened a door for many learning opportunities and courses.</p>
-            <h3>2023</h3>
-            <p>Fast forward to today I joined the software engineering department of the university and im still current enrolled their pushing forward as a 3rd year student</p>
+        <section class="bg-success  p-5">
+            <h2 class="display-3">Mini Bio</h2>
+            <p class="fs-4 text-white ">Let me walk you through my life</p>
+            <div class="container">
+                <div class="slider">
+                    <div class="slide">
+                        <h3 class="text-white">Life after 2002,</h3>
+                        <p class="fs-5">I offically joined this world</p>
+                    </div>
+                    <div class="slide">
+                        <h3 class="text-white" >2010</h3>
+                        <p class="fs-5">I got my first phone, the TECNO 1901, It was a momentous occasion, not just for me, but also for my friends. We were eager to witness the wonders this technological marvel had in store. I wasted no time in capturing my first photo.</p>
+                    </div>
+                    <div class="slide">
+                        <h3 class="text-white">2012</h3>
+                        <p class="fs-5">This year marked the beginning of my deep dive into the world of video games. It became a passion that consumed my days and nights as I embraced the challenges of conquering each level. To overcome these virtual obstacles, I found myself delving into the intricacies of computer manipulation. It was during this journey that I discovered a lifelong companion—Computers.</p>
+                    </div>
+                    <div class="slide">
+                        <h3 class="text-white">2017</h3>
+                        <p class="fs-5">I encountered my first computer freeze, a daunting moment of frustration. Determined, I turned to the Internet for a solution. With diligence and resourcefulness, I discovered a fix and successfully resolved the issue. A surge of pride washed over me as I reveled in my accomplishment.</p>
+                    </div>
+                    <div class="slide">
+                        <h3 class="text-white">2020</h3>
+                        <p class="fs-5">The infamous COVID-19 pandemic struck, forcing the world into a prolonged lockdown. In those isolated times, it felt like it was just me and my loyal laptop against the world. It became an opportunity to embark on new ventures. I delved into the realm of programming languages and web design, experimenting with different tools and techniques. </p>
+                    </div>
+                    <div class="slide">
+                        <h3 class="text-white">2021</h3>
+                        <p class="fs-5">I was blessed to be one of the students to join AAU. It opened a door for many learning opportunities and courses.</p>
+                    </div>
+                   <div class="slide">
+                        <h3 class="text-white">2023</h3>
+                        <p class="fs-5">Fast forward to today I joined the software engineering department of the university and im still current enrolled their pushing forward as a 3rd year student</p>
+                    </div>
+                </div>
+            <div class="text-center p-3 text-white">
+                <i class="fa fa-caret-left angle-left display-1 px-5" aria-hidden="true"></i>
+                <i class="fa fa-caret-right angle-right display-1 " aria-hidden="true"></i>
+            </div>
         </section>
 
-        <section class="skills">
-            <h2>My Expertice</h2>
-            <div class="skills">
-                <h3><img class="skill-logo" src="../src/images/tech.png" height="50" alt="Tech skills"> Tech</h3>
-                <ul>
-                    <li>Front-end Development</li>
-                    <li>App Development</li>
-                    <li>Back-end Development(a little)</li>
-                </ul>
-            </div>
-
-            <div class="skills">
-                <h3><img class="skill-logo" src="../src/images/language-skills.png" height="50" alt="language-skill">Languages</h3>
-                <ul>
-                    <li>Amharic</li>
-                    <li>English</li>
-                    <li>Arabic</li>
-                    <li>Spanish</li>
-                </ul>
-
-            </div>
-            
-            <div class="skills">
-                <h3><img class="skill-logo" src="../src/images/integrity.png" height="50" alt="Miscellaneous skills">Miscellaneous</h3>
-                <ul>
-                    <li>Photography</li>
-                    <li>Painting</li>
-                    <li>Cooking</li>
-                </ul>
+        <section class="container">
+            <h2 class="text-center display-3 my-5">My Expertice</h2>
+            <div class="d-flex justify-content-evenly gap-3 flex-wrap flex-lg-nowrap">
+                <div class="bg-primary text-white rounded-4">
+                    <div class="d-flex justify-content-center">
+                        <img class="w-25" src="../src/images/tech.png"  alt="Tech skills">
+                    </div>
+                    <h3 class="text-center">Tech</h3>
+                    <ul class="fs-5">
+                        <li>Front-end Development</li>
+                        <li>App Development</li>
+                        <li>Back-end Development(a little)</li>
+                    </ul>
+                </div>
+    
+                <div  class="bg-primary text-white rounded-4">
+                    <div  class="d-flex justify-content-center">
+                        <img class="w-25" src="../src/images/language-skills.png"  alt="language-skill">
+                    </div>
+                    <h3 class="text-center">Languages</h3>
+                    <ul class="fs-5">
+                        <li>Amharic</li>
+                        <li>English</li>
+                        <li>Arabic</li>
+                        <li>Spanish</li>
+                    </ul>
+    
+                </div>
+                
+                <div  class="bg-primary text-white rounded-4">
+                    <div class="d-flex justify-content-center">
+                        <img class="w-25" src="../src/images/integrity.png"  alt="Miscellaneous skills">
+                    </div>
+                    <h3 class="text-center">Miscellaneous</h3>
+                    <ul class="fs-5">
+                        <li>Photography</li>
+                        <li>Painting</li>
+                        <li>Cooking</li>
+                    </ul>
+                </div>
             </div>
         </section>
         
 
-        <section class="table">
-            <h2>More About me</h2>
-            <table>
-                <tr>
-                    <th colspan="2">Bonus Fun Facts</th>
-                </tr>
-                <tr>
-                    <td>Favorite song</td>
-                    <td><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0AZTpwagcDe4nH0mPcnYhS?utm_source=generator&theme=0"  height="352"  allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </tr>
-                <tr>
-                    <td>Favorite movie</td>
-                    <td id="interstellar">Interstellar</td>
-                </tr>
-                <tr>
-                    <td>Favorite book</td>
-                    <td id="cotex">The cotex</td>
-                </tr>
-                <tr>
-                    <td>Favorite SoundTrack</td>
-                    <td id="interstellar-audio"><audio src="../src/images/interstellar.mp3" controls autoplay muted></audio></td>
-                </tr>
-                <tr>
-                    <td>Wished superpower</td>
-                    <td id="superpower">Time travel</td>
-                </tr>
-                <tr>
-                    <td>I can't live without</td>
-                    <td id="cats">Cats</td>
-                </tr>
-                <tr>
-                    <td>I would love to meet</td>
-                    <td id="albert">Albert Einstein</td>
-                </tr>
-                <tr>
-                    <td>One thing I know I do well</td>
-                    <td id="cooking">Cooking</td>    
-                </tr>
-                <tr>
-                    <td>My long term goal</td>
-                    <td>Joining NASA</td>
-                </tr>
-            </table>
+        <section class="container my-5">
+            <h2 class="text-center fw-bold  fs-3 ">More About me</h2>
+            <div class="d-md-flex justify-content-center table-responsive ">
+                <table class=" table table-danger  ml-auto mr-auto bg-danger-subtle rounded-2 border-2 border-black">
+                    <tr>
+                        <th colspan="2" class="fs-3  text-center p-3">Bonus Fun Facts</th>
+                    </tr>
+                    <tr>
+                        <td class="fs-5 p-3">Favorite song</td>
+                        <td class="embed-responsive embed-responsive-16by9"> <iframe src="https://open.spotify.com/embed/track/0AZTpwagcDe4nH0mPcnYhS?utm_source=generator&theme=0"  class="p-3 " allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
+                    </tr>
+                    <tr>
+                        <td class="fs-5 p-3">Favorite movie</td>
+                        <td class="fs-5 p-3" id="interstellar">Interstellar</td>
+                    </tr>
+                    <tr>
+                        <td class="fs-5 p-3">Favorite book</td>
+                        <td class="fs-5 p-3" id="cotex">The cotex</td>
+                    </tr>
+                    <tr>
+                        <td class="fs-5 p-3">Favorite SoundTrack</td>
+                        <td class="fs-5 p-3" id="interstellar-audio"><audio  class="w-25 sm-w-100" src="../src/images/interstellar.mp3" controls autoplay muted></audio></td>
+                    </tr>
+                    <tr>
+                        <td class="fs-5 p-3">Wished superpower</td>
+                        <td class="fs-5 p-3" id="superpower">Time travel</td>
+                    </tr>
+                    <tr>
+                        <td class="fs-5 p-3">I can't live without</td>
+                        <td class="fs-5 p-3" id="cats">Cats</td>
+                    </tr>
+                    <tr>
+                        <td class="fs-5 p-3">I would love to meet</td>
+                        <td class="fs-5 p-3" id="albert">Albert Einstein</td>
+                    </tr>
+                    <tr>
+                        <td class="fs-5 p-3">One thing I know I do well</td>
+                        <td class="fs-5 p-3" id="cooking">Cooking</td>    
+                    </tr>
+                    <tr>
+                        <td class="fs-5 p-3">My long term goal</td>
+                        <td class="fs-5 p-3">Joining NASA</td>
+                    </tr>
+                </table>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <h2> <a href="contact.html" target="_blank">Let's Link</a></h2>
-        <h2>Socials</h2>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/r-a-174696263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin" target="_blank"></a></li>
-            <li><a href="https://instagram.com/____ruee____?igshid=YTQwZjQ0NmI0OA==" class="fa fa-instagram" target="_blank"></a></li>
-            <li><a href="https://x.com/fauxroot?s=35" class="fa fa-twitter" target="_blank"></a></li>
-            <li><a href="https://www.snapchat.com/add/fauxroot?share_id=urwEJGjHg7E&locale=en-US" class="fa fa-snapchat" target="_blank"></a></li>
-        </ul>
-        <h2>Address</h2>
-        <address>
-            <ul>
-                <li><a href="mailto:ruthalemfanta@gmail.com" class="fa fa-envelope" target="_blank">ruthalemfanta@gmail.com</a></li>
-                <li><a href="tel:+251922273737" class="fa fa-phone"> +251 922273737</a></li>
-                <li><a href="2QG7+HXF,Palace,MenelikIIAve,AddisAbaba" class="fa fa-home">4 Kilo, Addis Ababa</a></li>
-            </ul>
-        </address>
-        
+    <footer class="mt-5 p-2 d-flex flex-wrap gap-5 bg-primary-subtle ">
+        <div class="flex-grow-0 flex-shrink-0 w-50 d-flex align-items-center justify-content-center">
+            <h2 class="display-1"> <a class="text-decoration-none fw-bolder " href="contact.html" target="_blank">Let's Link</a></h2>
+        </div>
+        <div class="d-flex gap-5 flex-nowrap ">
+            <div>
+                <h2 class="text-primary">Socials</h2>
+                <ul class="list-unstyled">
+                    <li><a href="https://www.linkedin.com/in/r-a-174696263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-decoration-none  fa fa-linkedin" target="_blank"></a></li>
+                    <li><a href="https://instagram.com/____ruee____?igshid=YTQwZjQ0NmI0OA==" class="text-decoration-none  fa fa-instagram" target="_blank"></a></li>
+                    <li><a href="https://x.com/fauxroot?s=35" class="text-decoration-none  fa fa-twitter" target="_blank"></a></li>
+                    <li><a href="https://www.snapchat.com/add/fauxroot?share_id=urwEJGjHg7E&locale=en-US" class="text-decoration-none  fa fa-snapchat" target="_blank"></a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="text-primary">Address</h2>
+                <address>
+                    <ul  class="list-unstyled">
+                        <li><a href="mailto:ruthalemfanta@gmail.com" class="text-decoration-none  fa fa-envelope" target="_blank">ruthalemfanta@gmail.com</a></li>
+                        <li><a href="tel:+251922273737" class="text-decoration-none  fa fa-phone"> +251 922273737</a></li>
+                        <li><a href="2QG7+HXF,Palace,MenelikIIAve,AddisAbaba" class="text-decoration-none  fa fa-home">4 Kilo, Addis Ababa</a></li>
+                    </ul>
+                </address>
+            </div>
+        </div>
     </footer>
+    <script src="../src/js/script.js"></script>
+    <script src="../src/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

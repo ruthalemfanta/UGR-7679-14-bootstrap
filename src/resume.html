@@ -7,148 +7,188 @@
     <title>Ruth Alemfanta - Resume</title>
     <link rel="icon" href="../src/images/logo.png" type="image/jpng">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <header>
-        <img class="logo" src="../src/images/logo.png" alt="logo" height="100" width="100">
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="aboutme.html">About me</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="https://www.linkedin.com/in/r-a-174696263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin" target="_blank"></a></li>
-                <li><a href="https://instagram.com/____ruee____?igshid=YTQwZjQ0NmI0OA==" class="fa fa-instagram" target="_blank"></a></li>
-                <li><a href="https://x.com/fauxroot?s=35" class="fa fa-twitter" target="_blank"></a></li>
-                <li><a href="https://www.snapchat.com/add/fauxroot?share_id=urwEJGjHg7E&locale=en-US" class="fa fa-snapchat" target="_blank"></a></li>
-
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-white ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                 <img class="logo" src="../src/images/logo.png" alt="" height="100" width="100">
+              </a>
+             
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                    <li class="nav-item font-bold fw-bold text-uppercase"><a class="nav-link  mx-lg-2" href="home.html">Home</a></li>
+                    <li class="nav-item fw-bold text-uppercase"><a class="nav-link mx-lg-2" href="aboutme.html">About me</a></li>
+                    <li class="nav-item fw-bold text-uppercase"><a  class="nav-link mx-lg-2" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item fw-bold text-uppercase"><a  class="nav-link active mx-lg-2" href="resume.html">Resume</a></li>
+                    <li class="nav-item fw-bold text-uppercase "><a  class="nav-link mx-lg-2" href="contact.html">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+                <div class="d-none d-lg-block">     
+                    <a href="https://www.linkedin.com/in/r-a-174696263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin p-2 text-decoration-none text-bg-primary text-white rounded-4 p-2 fs-5 " target="_blank"></a>
+                    <a href="https://instagram.com/____ruee____?igshid=YTQwZjQ0NmI0OA==" class="fa fa-instagram p-1 text-decoration-none text-bg-primary text-white rounded-4 p-2 fs-5  " target="_blank"></a>
+                    <a href="https://x.com/fauxroot?s=35" class="fa fa-twitter p-1 text-decoration-none text-bg-primary text-white rounded-4 p-2 fs-5 " target="_blank"></a>
+                    <a href="https://www.snapchat.com/add/fauxroot?share_id=urwEJGjHg7E&locale=en-US" class="fa fa-snapchat p-1 text-decoration-none text-bg-primary text-white rounded-4 p-2 fs-5 " target="_blank"></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section class="resume-image">
-            <h1>Resume</h1>
+        <section class="text-center p-5 bg-info-subtle  ">
+            <h1 class="text-uppercase ">Resume</h1>
         </section>
+        <div class="container row m-2 m-md-5">
+            <section class="col-8">
+                <h2>Work Experience</h2>
+                <p class="fs-4"> 2018 - 2017 Summer School for primary Students</p>
+                <p><i>Bahir-Dar-Academy- Bahirdar</i></p>
+                <ul>
+                <li class="fs-5">Teached Elemntary students general computer usage</li>
+                <li class="fs-5">Was resposible for their grades</li>
+                </ul>
+                <p class="fs-4">2019-2021 Freelancing</p>
+                <ul>
+                <li class="fs-5">Took pictures for events</li>
+                <li class="fs-5">Took portraits</li>
+                <li class="fs-5">Sold photos i took</li>
+                </ul>
 
-        <section class="main">
-             <h2>Work Experience</h2>
-             <p class="title"> 2018 - 2017 Summer School for primary Students</p>
-             <p>Bahir-Dar-Academy- Bahirdar </p>
-             <ul>
-                <li>Teached Elemntary students general computer usage</li>
-                <li>Was resposible for their grades</li>
-             </ul>
-             <p class="title">2019-2021 Freelancing</p>
-             <ul>
-                <li>Took pictures for events</li>
-                <li>Took portraits</li>
-                <li>Sold photos i took</li>
-             </ul>
-
-             <h2>Education</h2>
-             <p class="title">2005-2009 Bahirdar Academy Elemntary school</p>
-             <ul>
-                <li>Ranked number 1 through out all grades.</li>
-                <li>Scored 100 7 courses out of 11 on 3rd grade</li>
-             </ul>
-             <p class="title">2010-2014 Bahirdar Academy Primary school </p> 
-             <ul>
-                <li>Scored an average above 95 in all grades.</li>
-                <li>Won a maths contestant held by the school</li>
+                <h2>Education</h2>
+                <p class="fs-4">2005-2009 Bahirdar Academy Elemntary school</p>
+                <ul>
+                <li class="fs-5">Ranked number 1 through out all grades.</li>
+                <li class="fs-5">Scored 100 7 courses out of 11 on 3rd grade</li>
+                </ul>
+                <p class="fs-4">2010-2014 Bahirdar Academy Primary school </p> 
+                <ul>
+                <li class="fs-5">Scored an average above 95 in all grades.</li>
+                <li class="fs-5">Won a maths contestant held by the school</li>
             </ul>
 
-            <p class="title">2015-2020 Bahirdar Academy Secondary school</p>
+            <p class="fs-4">2015-2020 Bahirdar Academy Secondary school</p>
             <ul>
-                <li>Scored the greatest average from the campus in freshman year.</li>
-                <li>Scored 616 at national entrance exam</li>
+                <li class="fs-5">Scored the greatest average from the campus in freshman year.</li>
+                <li class="fs-5">Scored 616 at national entrance exam</li>
             </ul>
 
-            <p class="title">2020-present</p>
+            <p class="fs-4">2020-present</p>
             <ul>
-                <li>Attending AAU</li>
+                <li class="fs-5">Attending AAU</li>
             </ul>
 
             <h2>Relevant Coursework</h2>
             <ul>
-                <li>Object-Oriented Programming</li>
-                <li>Data Structures and Algorithms</li>
-                <li>Software Development Lifecycle</li>
-                <li>Database Systems</li>
-                <li>Operating Systems</li>
+                <li class="fs-5">Object-Oriented Programming</li>
+                <li class="fs-5">Data Structures and Algorithms</li>
+                <li class="fs-5">Software Development Lifecycle</li>
+                <li class="fs-5">Database Systems</li>
+                <li class="fs-5">Operating Systems</li>
             </ul>
 
-            <h2 class="title">Extra-Curricular Activities</h2>
-            <p class="title">Translator</p>
+            <h2>Extra-Curricular Activities</h2>
+            <p class="fs-4">Translator</p>
             <ul>
-                <li>Filled as a translator in our school between arab students.</li>
+                <li class="fs-5">Filled as a translator in our school between arab students.</li>
             </ul>
 
-            <p class="title">Web developer</p>
+            <p class="fs-4">Web developer</p>
             <ul>
-                <li>Made websites for some clients</li>
+                <li class="fs-5">Made websites for some clients</li>
             </ul>
-            <p class="title">Independet design consultant</p>
+            <p class="fs-4">Independet design consultant</p>
             <ul>
-                <li>Consulted fellow web developers</li>
+                <li class="fs-5">Consulted fellow web developers</li>
             </ul>
             
         </section>
 
-        <aside>
-            <h1>Testimonials</h1>
-            <p>Friends and family</p>
-            <ul>
-                <li>"Hard, working and proactive"</li> 
-                <li>"Very serious when it comes to work"</li> 
-                <li>"Very friendly"</li> 
-            </ul>
+        <aside class="col-4 h-25">
+           <div class="d-flex justify-content-end ">
+                <button class="btn text-bg-dark text-white fs-1 d-block d-md-none" onclick="toggleTestimonials()" id="testimonials-button">|</button>
+           </div>
+           <div class="d-none d-md-block text-white bg-black rounded-3 p-2" id="testimonials-resume">
+                <h1>Testimonials</h1>
+                <p>Friends and family</p>
+                <ul>
+                    <li class="fs-5">"Hard, working and proactive"</li> 
+                    <li class="fs-5">"Very serious when it comes to work"</li> 
+                    <li class="fs-5">"Very friendly"</li> 
+                </ul>
 
-            <p>Customers</p>
-            <ul>
-                <li>"Higly satisfied with what I got. "</li>
-                <li>"Listens very well to our requirments"</li>
-            </ul>
+                <p>Customers</p>
+                <ul>
+                    <li class="fs-5">"Higly satisfied with what I got. "</li>
+                    <li class="fs-5">"Listens very well to our requirments"</li>
+                </ul>
+           </div>
         </aside>
+        </div>
 
-        <section class="credentials">
+        <section class="container my-5">
             <h2>Learned at</h2>
-            <a href="http://www.aau.edu.et/" target="_blank"><img src="../src/images/AAU.jpeg" alt="AAU logo"></a>
-            <a href="https://www.facebook.com/p/Bahir-Dar-Academy-100075447537566/" target="_blank"><img src="../src/images/BDA.jpeg" alt="BDA logo"></a>
-            <a href="https://www.coursera.org/" target="_blank"><img src="../src/images/courseralogo.png" alt="coursera logo"></a>
-            <a href="https://www.edx.org/"><img src="../src/images/edx.png" alt="Edx logo"></a>
+           <div class="d-flex flex-wrap  justify-content-evenly">
+            <a href="http://www.aau.edu.et/" target="_blank"><img class="image-fluid" src="../src/images/AAU.jpeg" alt="AAU logo"></a>
+            <a href="https://www.facebook.com/p/Bahir-Dar-Academy-100075447537566/" target="_blank"><img class="image-fluid" src="../src/images/BDA.jpeg" alt="BDA logo"></a>
+            <a href="https://www.coursera.org/" target="_blank"><img class="image-fluid" src="../src/images/courseralogo.png" alt="coursera logo"></a>
+            <a href="https://www.edx.org/"><img class="image-fluid" src="../src/images/edx.png" alt="Edx logo"></a>
+           </div>
+          <div class="text-end">
+            <a id="certificates__toggle" class="text-black text-decoration-none " onclick="hideShow()">more>></a>
+          </div>
             
         </section>
 
-        <section class="certificates-resume">
+        <section class="container d-none my-5" id="certificates-resume">
             <h2>Certificates</h2>
-            <img class="certificates" src="../src/images/coursera.png" alt="coursera" height="100">
-            <img class="certificates" src="../src/images/vmware.png" alt="Vmaware" height="100">
-            <img class="certificates" src="../src/images/it.png" alt="IT" height="100">
-            <img class="certificates" src="../src/images/cisco.png" alt="Cisco" height="100">
-
-
+            <div class="d-flex flex-wrap  justify-content-evenly" >
+                <img  src="../src/images/coursera.png" alt="coursera" height="100">
+                <img  src="../src/images/vmware.png" alt="Vmaware" height="100">
+                <img  src="../src/images/it.png" alt="IT" height="100">
+                <img  src="../src/images/cisco.png" alt="Cisco" height="100">
+            </div>
         </section>
     </main>
 
-    <footer>
-        <h2> <a href="contact.html" target="_blank" >Let's Link</a></h2>
-        <h2>Socials</h2>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/r-a-174696263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin" target="_blank"></a></li>
-            <li><a href="https://instagram.com/____ruee____?igshid=YTQwZjQ0NmI0OA==" class="fa fa-instagram" target="_blank"></a></li>
-            <li><a href="https://x.com/fauxroot?s=35" class="fa fa-twitter" target="_blank"></a></li>
-            <li><a href="https://www.snapchat.com/add/fauxroot?share_id=urwEJGjHg7E&locale=en-US" class="fa fa-snapchat" target="_blank"></a></li>
-        </ul>
-        <h2>Address</h2>
-        <address>
-            <ul>
-                <li><a href="mailto:ruthalemfanta@gmail.com" class="fa fa-envelope" target="_blank">ruthalemfanta@gmail.com</a></li>
-                <li><a href="tel:+251922273737" class="fa fa-phone"> +251 922273737</a></li>
-                <li><a href="2QG7+HXF,Palace,MenelikIIAve,AddisAbaba" class="fa fa-home">4 Kilo, Addis Ababa</a></li>
-            </ul>
-        </address>
+    <footer class="p-2 d-flex flex-wrap gap-5 bg-primary-subtle ">
+        <div class="flex-grow-0 flex-shrink-0 w-50 d-flex align-items-center justify-content-center">
+            <h2 class="display-1"> <a class="text-decoration-none fw-bolder " href="contact.html" target="_blank">Let's Link</a></h2>
+        </div>
+        <div class="d-flex gap-5 flex-nowrap ">
+            <div>
+                <h2 class="text-primary">Socials</h2>
+                <ul class="list-unstyled">
+                    <li><a href="https://www.linkedin.com/in/r-a-174696263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-decoration-none  fa fa-linkedin" target="_blank"></a></li>
+                    <li><a href="https://instagram.com/____ruee____?igshid=YTQwZjQ0NmI0OA==" class="text-decoration-none  fa fa-instagram" target="_blank"></a></li>
+                    <li><a href="https://x.com/fauxroot?s=35" class="text-decoration-none  fa fa-twitter" target="_blank"></a></li>
+                    <li><a href="https://www.snapchat.com/add/fauxroot?share_id=urwEJGjHg7E&locale=en-US" class="text-decoration-none  fa fa-snapchat" target="_blank"></a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="text-primary">Address</h2>
+                <address>
+                    <ul  class="list-unstyled">
+                        <li><a href="mailto:ruthalemfanta@gmail.com" class="text-decoration-none  fa fa-envelope" target="_blank">ruthalemfanta@gmail.com</a></li>
+                        <li><a href="tel:+251922273737" class="text-decoration-none  fa fa-phone"> +251 922273737</a></li>
+                        <li><a href="2QG7+HXF,Palace,MenelikIIAve,AddisAbaba" class="text-decoration-none  fa fa-home">4 Kilo, Addis Ababa</a></li>
+                    </ul>
+                </address>
+            </div>
+        </div>
     </footer>
+    <script src="../src/js/script.js"></script>
+    <script src="../src/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

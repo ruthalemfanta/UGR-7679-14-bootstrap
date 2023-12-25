@@ -8,91 +8,147 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Ruth Alemfanta - Home</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <header>
-        <img class="logo" src="../src/images/logo.png" alt="" height="100" width="100">
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="aboutme.html">About me</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="https://www.linkedin.com/in/r-a-174696263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin" target="_blank"></a></li>
-                <li><a href="https://instagram.com/____ruee____?igshid=YTQwZjQ0NmI0OA==" class="fa fa-instagram" target="_blank"></a></li>
-                <li><a href="https://x.com/fauxroot?s=35" class="fa fa-twitter" target="_blank"></a></li>
-                <li><a href="https://www.snapchat.com/add/fauxroot?share_id=urwEJGjHg7E&locale=en-US" class="fa fa-snapchat" target="_blank"></a></li>
-
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-white ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                 <img class="logo" src="../src/images/logo.png" alt="" height="100" width="100">
+              </a>
+             
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                    <li class="nav-item font-bold fw-bold text-uppercase"><a class="nav-link active mx-lg-2" href="home.html">Home</a></li>
+                    <li class="nav-item fw-bold text-uppercase"><a class="nav-link mx-lg-2" href="aboutme.html">About me</a></li>
+                    <li class="nav-item fw-bold text-uppercase"><a  class="nav-link mx-lg-2" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item fw-bold text-uppercase"><a  class="nav-link mx-lg-2" href="resume.html">Resume</a></li>
+                    <li class="nav-item fw-bold text-uppercase "><a  class="nav-link mx-lg-2" href="contact.html">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+                <div class="d-none d-lg-block">     
+                    <a href="https://www.linkedin.com/in/r-a-174696263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin p-2 text-decoration-none text-bg-primary text-white rounded-4 p-2 fs-5 " target="_blank"></a>
+                    <a href="https://instagram.com/____ruee____?igshid=YTQwZjQ0NmI0OA==" class="fa fa-instagram p-1 text-decoration-none text-bg-primary text-white rounded-4 p-2 fs-5  " target="_blank"></a>
+                    <a href="https://x.com/fauxroot?s=35" class="fa fa-twitter p-1 text-decoration-none text-bg-primary text-white rounded-4 p-2 fs-5 " target="_blank"></a>
+                    <a href="https://www.snapchat.com/add/fauxroot?share_id=urwEJGjHg7E&locale=en-US" class="fa fa-snapchat p-1 text-decoration-none text-bg-primary text-white rounded-4 p-2 fs-5 " target="_blank"></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
         </nav>
     </header>
-    <main>
-        <section class="home">
-           <h3>Hey there, im</h3>
-            <h1>RUTH ALEMFANTA</h1>
-            <h3>Get to know me</h3>
-            <p>I'm a software engineering student at Addis Ababa University, who has been interacting with computers for almost a lifetime and an enthusiast of our fellow brainies. I'm currently on my path of getting to know them more. Powered by Figma, vs code and coffee, I've also helped people turn their visions into digital collectibles.</p>
-            
-                <img class="home-photo" src="../src/images/home-image.png" alt="Ruth Alemfanta"  >
+   
+    <main class="mt-5">
+        <section class="container my-5">
+           <div class="d-flex flex-wrap flex-sm-nowrap ">
+                <div class="order-2 order-sm-1 w-100  w-sm-50  align-self-center ">
+                    <h3>Hey there, im</h3>
+                    <h1>RUTH ALEMFANTA</h1>
+                    <h3>Get to know me</h3>
+                    <p class="fs-5">I'm a software engineering student at Addis Ababa University, who has been interacting with computers for almost a lifetime and an enthusiast of our fellow brainies. I'm currently on my path of getting to know them more. Powered by Figma, vs code and coffee, I've also helped people turn their visions into digital collectibles.</p>
+                </div>
+                    
+               <div class="order-1 order-sm-2">
+                     <img class="img-fluid mt-5" src="../src/images/home-image.png" alt="Ruth Alemfanta"  >
+               </div>
+            </div>
         </section>
 
-        <div class="home-about">
-            <q class="qoute">Computers are high-speed, accurate, and stupid; humans are incredibly slow, inaccurate, and brilliant; together they are powerful beyond imagination</q>
-            <p class="caption">-Albert Einstein(I think)</p>
-            <video src="../src/images/einstin'svideo.mp4"  width="500" height="281" controls muted autoplay>
-                
-           </video><br>
-           <p class="qoute-description">Imagine a young girl who played games and read blogs about instances of the world stumbling across this quote. It enlightened me that despite the incredible capabilities of computers, they lack the brilliance and creativity inherent in human beings. They reminded me that I possess a unique power</p>
-           <a class="home-about-link" href="aboutme.html" target="_blank">TELL ME MORE</a>
+        <div class="container my-5">
+           <div class="row">
+                <div class="col-12 col-lg-6 text-center align-self-center bg-black rounded-4 p-3 text-white">
+                    <q class="fs-4">Computers are high-speed, accurate, and stupid; humans are incredibly slow, inaccurate, and brilliant; together they are powerful beyond imagination</q>
+                    <p class="fs-3 text-secondary ">-Albert Einstein(I think)</p>
+                </div>
+                <div class="col-12 col-lg-6 my-4">
+                    <video src="../src/images/einstin'svideo.mp4" controls muted autoplay> 
+                    </video><br>
+                </div>
+           </div>
+          <div class="text-center mt-3 p-3 bg-secondary rounded-4">
+            <p class="fs-4 text-white">Imagine a young girl who played games and read blogs about instances of the world stumbling across this quote. It enlightened me that despite the incredible capabilities of computers, they lack the brilliance and creativity inherent in human beings. They reminded me that I possess a unique power</p>
+            <a class="fs-3 text-decoration-none text-white text-bg-dark p-2" href="aboutme.html" target="_blank">TELL ME MORE</a>
+          </div>
         </div>
 
-        <section class="home-portfolio">
-            <h2>What I can Do</h2>
-            <h4>To some extent</h4>
-            <section class="works-webdev">
-                <h3> <i class="fa fa-code" aria-hidden="true"></i> Web Development</h3>
-                <p>I've been curious about web pages and how they worked since I intracted with one. It was in 11th grade when i first developed them, as a graded assignment. I've been experimenting with their making ever since. </p>
-            </section>
-            <section class="works-application">
-                <h3><i class="fa fa-apple" aria-hidden="true"></i> Applications</h3>
-                <p>As a beginner in the world of app development, I possess a growing skill set and a strong passion for creating innovative applications. While I am at the early stages of my journey, my dedication and eagerness to learn allow me to approach each project with enthusiasm and commitment to continuous improvement. </p>
-            </section>
-            <figure class="portfolio">
-                <img class="websites" src="../src/images/neaty.png" alt="Neaty website" height="100"  title="Website I made for Neaty">
-                <img class="websites" src="../src/images/matthew.png" alt="Matthew Perry tribute page" height="100"  title="Website I made for Matthew Perry tribute.">
-                <img class="websites" src="../src/images/p2.png" alt="second page of the tribute" height="100" title="second page">
-                <img class="websites" src="../src/images/midnight.png" alt="Midnight" height="100" title="Website I made for Midnight">
-               
-            </figure>
-            <a href="portfolio.html" target="_blank">VIEW MY ENTIRE PORTFOLIO</a>
+        <section class="container ">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="">
+                        <h2>What I can Do</h2>
+                        <h4 class="fs-6">To some extent</h4>
+                    </div>
+                   <div class="row">
+                        <section class="col-12 col-sm-6">
+                            <h3 class="fs-4"> <i class="fa fa-code" aria-hidden="true"></i> Web Development</h3>
+                            <p>I've been curious about web pages and how they worked since I intracted with one. It was in 11th grade when i first developed them, as a graded assignment. I've been experimenting with their making ever since. </p>
+                        </section>
+                        <section class="col-12 col-sm-6">
+                            <h3 class="fs-4"><i class="fa fa-apple" aria-hidden="true"></i> Applications</h3>
+                            <p>As a beginner in the world of app development, I possess a growing skill set and a strong passion for creating innovative applications. While I am at the early stages of my journey, my dedication and eagerness to learn allow me to approach each project with enthusiasm and commitment to continuous improvement. </p>
+                        </section>
+                   </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <figure class="row">
+                        <img class="col-6 p-2" src="../src/images/neaty.png" alt="Neaty website" height="100"  title="Website I made for Neaty">
+                        <img class="col-6 p-2" src="../src/images/matthew.png" alt="Matthew Perry tribute page" height="100"  title="Website I made for Matthew Perry tribute.">
+                        <img class="col-6 p-2" src="../src/images/p2.png" alt="second page of the tribute" height="100" title="second page">
+                        <img class="col-6 p-2" src="../src/images/midnight.png" alt="Midnight" height="100" title="Website I made for Midnight">
+                    </figure>
+                </div>
+            </div>
+            <div class="text-center my-5">
+                <a class="text-decoration-none text-white text-bg-dark p-2 fs-3" href="portfolio.html" target="_blank">VIEW MY ENTIRE PORTFOLIO</a>
+            </div>
         </section>
-        <div class="home-resume">
-            <a href="http://www.aau.edu.et/" target="_blank"><img src="../src/images/AAU.jpeg" alt="AAU logo"></a>
-            <a href="https://www.facebook.com/p/Bahir-Dar-Academy-100075447537566/" target="_blank"><img src="../src/images/BDA.jpeg" alt="BDA logo"></a>
-            <a href="https://www.coursera.org/" target="_blank"><img src="../src/images/courseralogo.png" alt="coursera logo"></a>
-            <a href="https://www.edx.org/"><img src="../src/images/edx.png" alt="Edx logo"></a>
-            <a href="resume.html">see more</a>
+        <div class="container my-5">
+            <div class="row justify-content-evenly ">
+                <a class="col-2" href="http://www.aau.edu.et/" target="_blank"><img class="img-fluid" src="../src/images/AAU.jpeg" alt="AAU logo"></a>
+                <a class="col-2" href="https://www.facebook.com/p/Bahir-Dar-Academy-100075447537566/" target="_blank"><img class="img-fluid" src="../src/images/BDA.jpeg" alt="BDA logo"></a>
+                <a class="col-2" href="https://www.coursera.org/" target="_blank"><img class="img-fluid" src="../src/images/courseralogo.png" alt="coursera logo"></a>
+                <a class="col-2" href="https://www.edx.org/"><img class="img-fluid" src="../src/images/edx.png" alt="Edx logo"></a>
+                <a class="col-2" href="resume.html">see more</a>
+            </div>
         </div>
 
     </main>
-    <footer>
-       <h2> <a href="contact.html" target="_blank">Let's Link</a></h2>
-        <h2>Socials</h2>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/r-a-174696263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin" target="_blank"></a></li>
-            <li><a href="https://instagram.com/____ruee____?igshid=YTQwZjQ0NmI0OA==" class="fa fa-instagram" target="_blank"></a></li>
-            <li><a href="https://x.com/fauxroot?s=35" class="fa fa-twitter" target="_blank"></a></li>
-            <li><a href="https://www.snapchat.com/add/fauxroot?share_id=urwEJGjHg7E&locale=en-US" class="fa fa-snapchat" target="_blank"></a></li>
-        </ul>
-        <h2>Address</h2>
-        <address>
-            <ul>
-                <li><a href="mailto:ruthalemfanta@gmail.com" class="fa fa-envelope" target="_blank">ruthalemfanta@gmail.com</a></li>
-                <li><a href="tel:+251922273737" class="fa fa-phone"> +251 922273737</a></li>
-                <li><a href="2QG7+HXF,Palace,MenelikIIAve,AddisAbaba" class="fa fa-home">4 Kilo, Addis Ababa</a></li>
-            </ul>
-        </address>
+    <footer class="mt-5 p-2 d-flex flex-wrap gap-5 bg-primary-subtle ">
+        <div class="flex-grow-0 flex-shrink-0 w-50 d-flex align-items-center justify-content-center">
+            <h2 class="display-1"> <a class="text-decoration-none fw-bolder " href="contact.html" target="_blank">Let's Link</a></h2>
+        </div>
+        <div class="d-flex gap-5 flex-nowrap ">
+            <div>
+                <h2 class="text-primary">Socials</h2>
+                <ul class="list-unstyled">
+                    <li><a href="https://www.linkedin.com/in/r-a-174696263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-decoration-none  fa fa-linkedin" target="_blank"></a></li>
+                    <li><a href="https://instagram.com/____ruee____?igshid=YTQwZjQ0NmI0OA==" class="text-decoration-none  fa fa-instagram" target="_blank"></a></li>
+                    <li><a href="https://x.com/fauxroot?s=35" class="text-decoration-none  fa fa-twitter" target="_blank"></a></li>
+                    <li><a href="https://www.snapchat.com/add/fauxroot?share_id=urwEJGjHg7E&locale=en-US" class="text-decoration-none  fa fa-snapchat" target="_blank"></a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="text-primary">Address</h2>
+                <address>
+                    <ul  class="list-unstyled">
+                        <li><a href="mailto:ruthalemfanta@gmail.com" class="text-decoration-none  fa fa-envelope" target="_blank">ruthalemfanta@gmail.com</a></li>
+                        <li><a href="tel:+251922273737" class="text-decoration-none  fa fa-phone"> +251 922273737</a></li>
+                        <li><a href="2QG7+HXF,Palace,MenelikIIAve,AddisAbaba" class="text-decoration-none  fa fa-home">4 Kilo, Addis Ababa</a></li>
+                    </ul>
+                </address>
+            </div>
+        </div>
     </footer>
+    <script src="../src/js/bootstrap.bundle.min.js"></script>
+   
+
 </body>
 </html>

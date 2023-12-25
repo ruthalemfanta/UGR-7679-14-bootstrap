@@ -7,100 +7,155 @@
     <title>Ruth Alemfanta - Portfolio</title>
     <link rel="icon" href="../src/images/logo.png" type="image/jpng">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
     <header>
-        <img class="logo" src="../src/images/logo.png" alt="" height="100" width="100">
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="aboutme.html">About me</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="https://www.linkedin.com/in/r-a-174696263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin" target="_blank"></a></li>
-                <li><a href="https://instagram.com/____ruee____?igshid=YTQwZjQ0NmI0OA==" class="fa fa-instagram" target="_blank"></a></li>
-                <li><a href="https://x.com/fauxroot?s=35" class="fa fa-twitter" target="_blank"></a></li>
-                <li><a href="https://www.snapchat.com/add/fauxroot?share_id=urwEJGjHg7E&locale=en-US" class="fa fa-snapchat" target="_blank"></a></li>
-
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-white ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                 <img class="logo" src="../src/images/logo.png" alt="" height="100" width="100">
+              </a>
+             
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                    <li class="nav-item font-bold fw-bold text-uppercase"><a class="nav-link  mx-lg-2" href="home.html">Home</a></li>
+                    <li class="nav-item fw-bold text-uppercase"><a class="nav-link mx-lg-2" href="aboutme.html">About me</a></li>
+                    <li class="nav-item fw-bold text-uppercase"><a  class="nav-link active mx-lg-2" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item fw-bold text-uppercase"><a  class="nav-link mx-lg-2" href="resume.html">Resume</a></li>
+                    <li class="nav-item fw-bold text-uppercase "><a  class="nav-link mx-lg-2" href="contact.html">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+                <div class="d-none d-lg-block">     
+                    <a href="https://www.linkedin.com/in/r-a-174696263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin p-2 text-decoration-none text-bg-primary text-white rounded-4 p-2 fs-5 " target="_blank"></a>
+                    <a href="https://instagram.com/____ruee____?igshid=YTQwZjQ0NmI0OA==" class="fa fa-instagram p-1 text-decoration-none text-bg-primary text-white rounded-4 p-2 fs-5  " target="_blank"></a>
+                    <a href="https://x.com/fauxroot?s=35" class="fa fa-twitter p-1 text-decoration-none text-bg-primary text-white rounded-4 p-2 fs-5 " target="_blank"></a>
+                    <a href="https://www.snapchat.com/add/fauxroot?share_id=urwEJGjHg7E&locale=en-US" class="fa fa-snapchat p-1 text-decoration-none text-bg-primary text-white rounded-4 p-2 fs-5 " target="_blank"></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section class="portfolio-image">
+        <section class="text-center bg-primary py-5">
             <h1>PORTFOLIO</h1>
         </section>
              
-            <section class="works-webdev">
-                <h2> <i class="fa fa-code" aria-hidden="true"></i> Web Development</h2>
-                <p>I've been curious about web pages and how they worked since I intracted with one. It was in 11th grade when i first developed them, as a graded assignment. I've been experimenting with their making ever since. </p>
-            </section>
-            <section class="works-app">
-                <h2><i class="fa fa-apple" aria-hidden="true"></i> Applications</h2>
-                <p>Thanks to the the courses I took Freshman year I've been equiped with the necessarry tools to create apps to anyone's liking</p>
-            </section>
+        <div class="container my-5">
+           <div class="row">
+                <section class="col-12 col-sm-6">
+                    <h2> <i class="fa fa-code" aria-hidden="true"></i> Web Development</h2>
+                    <p class="fs-5">I've been curious about web pages and how they worked since I intracted with one. It was in 11th grade when i first developed them, as a graded assignment. I've been experimenting with their making ever since. </p>
+                </section>
+                <section class="col-12 col-sm-6">
+                    <h2><i class="fa fa-apple" aria-hidden="true"></i> Applications</h2>
+                    <p class="fs-5">Thanks to the the courses I took Freshman year I've been equiped with the necessarry tools to create apps to anyone's liking</p>
+                </section>
+           </div>
 
-            <section class="works-photography">
-                <h2><i class="fa fa-camera-retro" aria-hidden="true"></i> Photography</h2>
-                <p>Among the many things I was known for was capturing my moments. My need to preserve memories improved my ability to interact with camera lenses. I've now taken a tonne of professional pictures that meet my clients' expectations.                </p>
-            </section>
-            <section class="works-cooking">
-                <h2><i class="fa fa-cutlery" aria-hidden="true"></i> Cooking</h2>
-                <p>Very random, but yes im a part-time skilled cook. From preparing it to eating it, food has always played a significant role in my life. I hate to say it, but it's similar to therapy. I've filled in for friends and a few clients when my expertise was needed.
-                </p>
-            </section>
+            <div class="row">
+                <section class="col-12 col-sm-6">
+                    <h2><i class="fa fa-camera-retro" aria-hidden="true"></i> Photography</h2>
+                    <p class="fs-5">Among the many things I was known for was capturing my moments. My need to preserve memories improved my ability to interact with camera lenses. I've now taken a tonne of professional pictures that meet my clients' expectations.                </p>
+                </section>
+                <section class="col-12 col-sm-6">
+                    <h2><i class="fa fa-cutlery" aria-hidden="true"></i> Cooking</h2>
+                    <p class="fs-5">Very random, but yes im a part-time skilled cook. From preparing it to eating it, food has always played a significant role in my life. I hate to say it, but it's similar to therapy. I've filled in for friends and a few clients when my expertise was needed.
+                    </p>
+                </section>
+            </div>
+        </div>
 
 
 
-        <section class="myworks">
-                <h2>My Works</h2>
-            <div class="webdev">
-                <h2>Web Development</h2>
-                <img class="websites" src="../src/images/neaty.png" alt="Neaty website" height="100"  title="Website I made for Neaty">
-                <img class="websites" src="../src/images/matthew.png" alt="Matthew Perry tribute page" height="100"  title="Website I made for Matthew Perry tribute.">
-                <img class="websites" src="../src/images/p2.png" alt="second page of the tribute" height="100" title="second page">
-                <img class="websites" src="../src/images/Midnight.png" alt="Midnight" height="100" title="Website I made for Midnight">
-                <img class="websites" src="../src/images/clemo.png" alt="Clemo" height="100" title="Website I made for Clemo">
-                <img class="websites" src="../src/images/auro.png" alt="Auro" height="100" title="Website I made for Auro">
-                <img class="websites" src="../src/images/picolo.png" alt="Picolo" height="100" title="Website I made for picolo">
+        <section class="bg-black mt-5 p-4">
+                <h2 class="text-primary display-4 fw-bold ">My Works</h2>
+            <div class="row no-gutters">
+                <div class="col-12">
+                    <h2 class="text-white">Web Development</h2>
+                </div>
+                <div class="col-12 d-flex slider-container gap-5">
+                    <i class="fa fa-angle-left text-white display-3  slider-icon" aria-hidden="true"></i>
+                    <div class="d-flex overflow-hidden gap-5 slider-content">
+                        <img class="websites" src="../src/images/neaty.png" alt="Neaty website" height="200"  title="Website I made for Neaty">
+                        <img class="websites" src="../src/images/matthew.png" alt="Matthew Perry tribute page" height="200"  title="Website I made for Matthew Perry tribute.">
+                        <img class="websites" src="../src/images/p2.png" alt="second page of the tribute" height="200" title="second page">
+                        <img class="websites" src="../src/images/Midnight.png" alt="Midnight" height="200" title="Website I made for Midnight">
+                        <img class="websites" src="../src/images/clemo.png" alt="Clemo" height="200" title="Website I made for Clemo">
+                        <img class="websites" src="../src/images/auro.png" alt="Auro" height="200" title="Website I made for Auro">
+                        <img class="websites" src="../src/images/picolo.png" alt="Picolo" height="200" title="Website I made for picolo">
+                    </div>
+                    <i class="fa fa-angle-right text-white display-3  slider-icon" aria-hidden="true"></i>
+                </div>
             </div>
 
-            <div class="applications">
-                <h2>Applications</h2>
-                <img src="../src/images/countdownapp.jpeg" alt="countdownapp" height="100">
-                <img src="../src/images/calculator.jpeg" alt="calculator" height="100">
+            <div class="row no-gutters">
+                <div class="col-12">
+                    <h2 class="text-white">Applications</h2>
+                </div>
+                <div class="col-12 d-flex slider-container gap-5">
+                    <i class="fa fa-angle-left text-white display-3  slider-icon" aria-hidden="true"></i>
+                    <div class="d-flex overflow-hidden gap-5 slider-content">
+                        <img src="../src/images/countdownapp.jpeg" alt="countdownapp" height="200">
+                        <img src="../src/images/calculator.jpeg" alt="calculator" height="200">
+                    </div>
+                    <i class="fa fa-angle-right text-white display-3  slider-icon" aria-hidden="true"></i>
+                </div>
 
             </div>
 
-            <div class="photography">
-                <h2>Photography</h2>
-                <img class="photograph-por" src="../src/images/books.jpg" alt="books" height="100">
-                <img class="photograph-por" src="../src/images/ceiling.jpeg" alt="ceilings" height="100">
-                <img class="photograph-por" src="../src/images/clouds.jpeg" alt="clouds" height="100">
-                <img class="photograph-por" src="../src/images/fog.jpeg" alt="fog" height="100">
-                <img class="photograph-por" src="../src/images/forest.jpeg" alt="forest" height="100">
-                <img class="photograph-por" src="../src/images/glass.jpeg" alt="glass" height="100">
-                <img class="photograph-por" src="../src/images/moon.jpeg" alt="moon" height="100">
-                <img class="photograph-por" src="../src/images/road.jpeg" alt="road" height="100">
-                <img class="photograph-por" src="../src/images/shoes.jpeg" alt="shoes" height="100">               
-                <img class="photograph-por" src="../src/images/p1.jpg" alt="photo" height="100"> 
-                <img class="photograph-por" src="../src/images/client1.jpeg" alt="client photo" height="100">
+            <div class="row no-gutters">
+                <div class="col-12">
+                  <h2 class="text-white">Photography</h2>
+                </div>
+                <div class="col-12 d-flex slider-container gap-5 justify-content-center align-content-center  ">
+                    <i class="fa fa-angle-left text-white display-3  slider-icon" aria-hidden="true"></i>
+                    <div class="d-flex overflow-hidden gap-5 slider-content ">
+                        <img class="image-fluid" src="../src/images/books.jpg" height="200" alt="books">
+                        <img class="image-fluid" src="../src/images/ceiling.jpeg" height="200" alt="ceilings">
+                        <img class="photograph-por" src="../src/images/clouds.jpeg" height="200" alt="clouds">
+                        <img class="photograph-por" src="../src/images/fog.jpeg" height="200" alt="fog">
+                        <img class="photograph-por" src="../src/images/forest.jpeg" height="200" alt="forest">
+                        <img class="photograph-por" src="../src/images/glass.jpeg" height="200" alt="glass">
+                        <img class="photograph-por" src="../src/images/moon.jpeg" height="200" alt="moon">
+                        <img class="photograph-por" src="../src/images/road.jpeg" height="200" alt="road">
+                        <img class="photograph-por" src="../src/images/shoes.jpeg" height="200" alt="shoes">
+                        <img class="photograph-por" src="../src/images/p1.jpg" height="200" alt="photo">
+                        <img class="photograph-por" src="../src/images/client1.jpeg" height="200" alt="client photo">
+                    </div>
+                    <i class="fa fa-angle-right text-white display-3  slider-icon" aria-hidden="true"></i>
+                </div>
+              </div>
 
-            </div>
+            <div class="row no-gutters">
+                <div class="col-12">
+                    <h2 class="text-white">Cooking</h2>
+                </div>
 
-            <div>
-                <h2>Cooking</h2>
-                <img class="foods" src="../src/images/avocadosalad.jpeg" alt="avocadosalad" height="100">
-                <img class="foods" src="../src/images/brocollichicken.jpeg" alt="brocollichicken" height="100">
-                <img class="foods" src="../src/images/cabornaro.jpeg" alt="cabornaro" height="100">
-                <img class="foods" src="../src/images/chicken.jpeg" alt="chicken" height="100">
-                <img class="foods" src="../src/images/chocolate.jpeg" alt="chocolate" height="100">
-                <img class="foods" src="../src/images/currychicken.jpeg" alt="currychicken" height="100">
-                <img class="foods" src="../src/images/donut.jpeg" alt="donut" height="100">
-                <img class="foods" src="../src/images/waffle.jpeg" alt="waffle" height="100">
+                <div class="col-12 d-flex slider-container gap-5">
+                    <i class="fa fa-angle-left text-white display-3  slider-icon" aria-hidden="true"></i>
+                    <div class="d-flex overflow-hidden gap-5 slider-content">
+                        <img class="foods" src="../src/images/avocadosalad.jpeg" alt="avocadosalad" height="200">
+                        <img class="foods" src="../src/images/brocollichicken.jpeg" alt="brocollichicken" height="200">
+                        <img class="foods" src="../src/images/cabornaro.jpeg" alt="cabornaro" height="200">
+                        <img class="foods" src="../src/images/chicken.jpeg" alt="chicken" height="200">
+                        <img class="foods" src="../src/images/chocolate.jpeg" alt="chocolate" height="200">
+                        <img class="foods" src="../src/images/currychicken.jpeg" alt="currychicken" height="200">
+                        <img class="foods" src="../src/images/donut.jpeg" alt="donut" height="200">
+                        <img class="foods" src="../src/images/waffle.jpeg" alt="waffle" height="200">
+                    </div>
+                    <i class="fa fa-angle-right text-white display-3  slider-icon" aria-hidden="true"></i>
+                </div>
             </div>
 
 
@@ -108,24 +163,34 @@
 
     </main>
 
-    <footer>
-        <h2> <a href="contact.html">Let's Link</a></h2>
-        <h2>Socials</h2>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/r-a-174696263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin" target="_blank"></a></li>
-            <li><a href="https://instagram.com/____ruee____?igshid=YTQwZjQ0NmI0OA==" class="fa fa-instagram" target="_blank"></a></li>
-            <li><a href="https://x.com/fauxroot?s=35" class="fa fa-twitter" target="_blank"></a></li>
-            <li><a href="https://www.snapchat.com/add/fauxroot?share_id=urwEJGjHg7E&locale=en-US" class="fa fa-snapchat" target="_blank"></a></li>
-        </ul>
-        <h2>Address</h2>
-        <address>
-            <ul>
-                <li><a href="mailto:ruthalemfanta@gmail.com" class="fa fa-envelope" target="_blank">ruthalemfanta@gmail.com</a></li>
-                <li><a href="tel:+251922273737" class="fa fa-phone"> +251 922273737</a></li>
-                <li><a href="2QG7+HXF,Palace,MenelikIIAve,AddisAbaba" class="fa fa-home">4 Kilo, Addis Ababa</a></li>
-            </ul>
-        </address>
+    <footer class="p-2 d-flex flex-wrap gap-5 bg-primary-subtle ">
+        <div class="flex-grow-0 flex-shrink-0 w-50 d-flex align-items-center justify-content-center">
+            <h2 class="display-1"> <a class="text-decoration-none fw-bolder " href="contact.html" target="_blank">Let's Link</a></h2>
+        </div>
+        <div class="d-flex gap-5 flex-nowrap ">
+            <div>
+                <h2 class="text-primary">Socials</h2>
+                <ul class="list-unstyled">
+                    <li><a href="https://www.linkedin.com/in/r-a-174696263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-decoration-none  fa fa-linkedin" target="_blank"></a></li>
+                    <li><a href="https://instagram.com/____ruee____?igshid=YTQwZjQ0NmI0OA==" class="text-decoration-none  fa fa-instagram" target="_blank"></a></li>
+                    <li><a href="https://x.com/fauxroot?s=35" class="text-decoration-none  fa fa-twitter" target="_blank"></a></li>
+                    <li><a href="https://www.snapchat.com/add/fauxroot?share_id=urwEJGjHg7E&locale=en-US" class="text-decoration-none  fa fa-snapchat" target="_blank"></a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="text-primary">Address</h2>
+                <address>
+                    <ul  class="list-unstyled">
+                        <li><a href="mailto:ruthalemfanta@gmail.com" class="text-decoration-none  fa fa-envelope" target="_blank">ruthalemfanta@gmail.com</a></li>
+                        <li><a href="tel:+251922273737" class="text-decoration-none  fa fa-phone"> +251 922273737</a></li>
+                        <li><a href="2QG7+HXF,Palace,MenelikIIAve,AddisAbaba" class="text-decoration-none  fa fa-home">4 Kilo, Addis Ababa</a></li>
+                    </ul>
+                </address>
+            </div>
+        </div>
     </footer>
-    
+    <script src="../src/js/script.js"></script>
+    <script src="../src/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
